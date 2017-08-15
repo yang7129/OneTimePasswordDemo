@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Verify</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            @*<input type="text" id="Code" /><br />*@
+            @Html.TextBox("Code")<br />
+            <input type="submit" value="送出" /><br />
+            @ViewBag.Msg
+        }
+    </div>
+</body>
+</html>
